@@ -69,9 +69,6 @@ jobs:
       uses: P3TERX/debugger-action@master
       if: env.SSH_ACTIONS == 'true'
 
-    - name: Generate configuration file
-      run: make defconfig
-
     - name: Download package
       id: package
       run: |
